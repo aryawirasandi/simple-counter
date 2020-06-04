@@ -4,8 +4,8 @@ import { ButtonWrapper, ButtonDanger, ButtonSuccess} from "./Buttons.styled";
 function Button (props){
     return (
         <ButtonWrapper>
-            <ButtonSuccess>-</ButtonSuccess>
-            <ButtonDanger>+</ButtonDanger>
+            <ButtonSuccess onClick={props.handleIncrease}>+</ButtonSuccess>
+            <ButtonDanger onClick={props.handleDecrease}>-</ButtonDanger>
         </ButtonWrapper>
     )
 }
