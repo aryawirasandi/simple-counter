@@ -10,11 +10,11 @@ function Main (){
     let [number, setValue] = useState(0);
 
     function increaseValue(){
-        number == 20 ? alert("hey you have been achieved at the hight level of this counter please decrease it") : setValue(number += 1);
+        number === 20 ? alert("hey you have been achieved at the hight level of this counter please decrease it") : setValue(number += 1);
     }
 
     function decreaseValue(){
-        number == 0 ? setValue(0) : setValue(number -= 1);
+        number === 0 ? setValue(0) : setValue(number -= 1);
     }
 
     return (
